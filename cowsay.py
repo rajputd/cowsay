@@ -33,18 +33,29 @@ def drawTextBox(lines):
     Returns:
         None
     """
+    #get the width of the textbox
     maxlinelength = getMaxLineLength(lines) + borderpadding
+
+    #render the top horizontal line
     horizontal_border = " " + ('-' * maxlinelength)
     print(horizontal_border)
 
+
     if len(lines) == 1:
+        #if the text is only one line long use angle brackets
         print("< " + padLine(lines[0], maxlinelength) + " >")
     else:
+        #print rounded corners of the top of the text box
         print("/ " + (" " * (maxlinelength - borderpadding)) + " \\")
+
+        #print the text content
         for line in lines:
             print("| " + padLine(line, maxlinelength) + " |")
+
+        #print the rounded corners at the bottom of the text box
         print("\\ " + (" " * (maxlinelength - borderpadding)) + " /")
 
+    #print the bottom border
     print(horizontal_border)
 
 def getLines():
