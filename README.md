@@ -1,6 +1,6 @@
 # Cowsay
 
-an implementation the famous CLI app cowsay in Python.
+an implementation of the famous CLI app cowsay in Python.
 
 ## Prequisites
 - Python3
