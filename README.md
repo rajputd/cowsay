@@ -1,4 +1,4 @@
-# Cowsay.py
+# Cowsay
 
 an implementation the famous CLI app cowsay in Python.
 
